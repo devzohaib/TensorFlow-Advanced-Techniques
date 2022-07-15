@@ -1,6 +1,8 @@
 # Tensorflow_practice_notebooks
 this repo code contains notebooks related to Deep learning.
 
+# Table of contents
+- [Functioanl API](#1--Keras-Functional-API)
 
 # 1- Keras Functional API
 
