@@ -21,7 +21,7 @@ sequential_model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_sha
 <h3 align="center">Functional API</h3>
 
 ```python
-# input Tensor
+# input 
 input_layer = tf.keras.Input(shape=(28, 28))
 
 # hidden layer
