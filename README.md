@@ -4,6 +4,8 @@ This repo code contain notebooks related to Deep learning.
 # Table of contents
 - [1- Keras Functional API](#1--Keras-Functional-API)
 - [2- Adding Custom Loss Function](#2--Adding-Custom-Loss-Functions)
+- [3- Adding Custom Layers| lambda layer](#3--Creating-Custom-Layer-|-lambda-layer)
+
 
 # 1- Keras Functional API
 
@@ -39,7 +41,7 @@ functional_model = Model(inputs=input_layer, outputs=output_layer)
 
 </details>
 
-# 2- Adding Custom Loss Functions
+# 3- Adding Custom Loss Functions
 
 <details>
 <summary>Click to expand!</summary>
@@ -67,6 +69,46 @@ model.fit(X, Y, epochs=5)
 
 [Link to Notebook](https://github.com/devzohaib/Tensorflow_practice_notebooks/tree/master/2-%20Custom%20Loss%20Functions)
 
+
+</details>
+
+# 2- Creating Custom Layer | lambda layer
+
+<details>
+<><summary>Click to expand!</summary>
+
+#### 2- Lambda Layer
+
+`lambda layer`. This is a layer type that can be used to execute `arbitrary code`. The purpose of the `lambda layer` is to execute an arbitrary function within a `sequential` or a `functional API` `model`. It's best-suited for something quick and simple or if you want to experiment.
+
+```python
+def my_relu(x):
+    return K.maximum(-0.1, x)
+
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Flatten(input_shape=(28, 28)),
+    tf.keras.layers.Dense(128),
+    tf.keras.layers.Lambda(my_relu),  # <-- this is the lambda layer
+    tf.keras.layers.Dense(10, activation='softmax')
+])
+
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train, epochs=5)
+```
+```python
+model = tf.keras.models.Sequential([
+  tf.keras.layers.Flatten(input_shape=(28, 28)),
+  tf.keras.layers.Dense(128),
+  tf.keras.layers.Lambda(lambda x: tf.abs(x)), # <-- this is the lambda layer
+  tf.keras.layers.Dense(10, activation='softmax')
+])
+```
+[link to Notebooks]()
+
+</details>
 
 </details>
 
