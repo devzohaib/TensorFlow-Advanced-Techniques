@@ -3,6 +3,11 @@ this repo code contains notebooks related to Deep learning.
 
 
 # 1- Keras Functional API
+
+<details>
+<summary>Click to expand!</summary>
+
+#### 1- Keras Functional API
 One great advantage of using the functional API is the additional flexibility in your model `architecture design`, where instead of each layer being linearly stacked in turn with other layers, you can have `branches`, `cycles`, `multiple inputs and outputs`, and a whole lot more.
 
 <h3 align="center">Sequential API</h3>
@@ -27,5 +32,22 @@ output_layer = tf.keras.layers.Dense(10, activation=tf.nn.softmax)(first_dense)
 # declare inputs and outputs
 functional_model = Model(inputs=input_layer, outputs=output_layer)
 ```
+</details>
 
 # 2- Adding Custom Loss Functions
+
+<details>
+<><summary>Click to expand!</summary>
+
+#### 2- Adding Custom Loss Functions
+
+</details>
+
+# 2- Template heading for a section
+
+<details>
+<><summary>Click to expand!</summary>
+
+#### 2- Template heading for a section
+
+</details>
