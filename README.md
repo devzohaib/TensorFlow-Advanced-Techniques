@@ -2,7 +2,8 @@
 this repo code contains notebooks related to Deep learning.
 
 # Table of contents
-- [Functioanl API](#1--Keras-Functional-API)
+- [Functional API](#1--Keras-Functional-API)
+- [Sequential API](#2--Adding-Custom-Loss-Functions)
 
 # 1- Keras Functional API
 
