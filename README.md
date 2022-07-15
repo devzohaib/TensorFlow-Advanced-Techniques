@@ -13,7 +13,7 @@ sequential_model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_sha
                                                tf.keras.layers.Dense(10, activation=tf.nn.softmax)])
 
 ```
-<h3 align="center">Functioan API</h3>
+<h3 align="center">Functional API</h3>
 
 ```python
 # input Tensor
