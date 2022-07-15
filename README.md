@@ -6,16 +6,17 @@ this repo code contains notebooks related to Deep learning.
 One great advantage of using the functional API is the additional flexibility in your model `architecture design`, where instead of each layer being linearly stacked in turn with other layers, you can have `branches`, `cycles`, `multiple inputs and outputs`, and a whole lot more.
 
 ### Sequential Vs Functional API
+<h4 align="center">Sequential API</h4>
+
 ```python
-                        # sequential API
 sequential_model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28, 28)),
                                                tf.keras.layers.Dense(128, activation=tf.nn.relu),
                                                tf.keras.layers.Dense(10, activation=tf.nn.softmax)])
 
 ```
+<h4 align="center">Functioan API</h4>
 
 ```python
-                        # functional API
 # input Tensor
 input_layer = tf.keras.Input(shape=(28, 28))
 
