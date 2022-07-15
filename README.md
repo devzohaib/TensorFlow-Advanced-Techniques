@@ -5,8 +5,7 @@ this repo code contains notebooks related to Deep learning.
 # 1- Keras Functional API
 One great advantage of using the functional API is the additional flexibility in your model `architecture design`, where instead of each layer being linearly stacked in turn with other layers, you can have `branches`, `cycles`, `multiple inputs and outputs`, and a whole lot more.
 
-### Sequential Vs Functional API
-<h4 align="center">Sequential API</h4>
+<h3 align="center">Sequential API</h3>
 
 ```python
 sequential_model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28, 28)),
@@ -14,7 +13,7 @@ sequential_model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_sha
                                                tf.keras.layers.Dense(10, activation=tf.nn.softmax)])
 
 ```
-<h4 align="center">Functioan API</h4>
+<h3 align="center">Functioan API</h3>
 
 ```python
 # input Tensor
