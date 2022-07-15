@@ -42,7 +42,7 @@ functional_model = Model(inputs=input_layer, outputs=output_layer)
 # 2- Adding Custom Loss Functions
 
 <details>
-<><summary>Click to expand!</summary>
+<summary>Click to expand!</summary>
 
 #### 2- Adding Custom Loss Functions
 To create a custom loss function, you'll need to create your own function that accepts two parameters , typically called `y_true` and `y_pred` as in prediction on these contain your true labels and your current predicted values. The loss will be some kind of a function that calculates the difference between the two.
